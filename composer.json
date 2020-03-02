@@ -1,0 +1,5 @@
+{
+    "require": {
+        "maduser/minimal-php56": "^0.1.1"
+    }
+}
