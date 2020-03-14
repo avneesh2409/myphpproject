@@ -31,5 +31,8 @@ Route::post('/login',[
     //'middlerware'=>'Login:editor',
     'uses'=>'LoginController@index',
 ]);
+Route::get('sendbasicemail','MailController@basic_email');
+Route::get('sendhtmlemail','MailController@html_email');
+Route::get('sendattachmentemail','MailController@attachment_email');
 
 Route::resource('home','HomeController');

@@ -16,7 +16,7 @@
       @endif
       
       <?php
-         echo Form::open(array('url'=>'/login','method'=>'POST'));
+         echo Form::open(array('url'=>'/login','method'=>'POST','files'=>'true'));
       ?>
 <div style="position:relative;top:10px;left:30%;">      
       <table border = '1'>
@@ -30,6 +30,14 @@
          <tr>
             <td>Password</td>
             <td><?php echo Form::password('password'); ?></td>
+         </tr>
+            <td align='center' colspan='2'>
+                <?php
+                    echo 'Select the file to upload.';
+                    echo Form::file('image');
+                ?>
+            </td>
+         <tr>
          </tr>
          <tr>
             <td align = 'center' colspan = '2'>
