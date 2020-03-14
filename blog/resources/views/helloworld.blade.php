@@ -6,8 +6,8 @@
         <title>Hello World MVC architecture</title>
     </head>
     <body>
-      <div>
-        <h1>yeh we got it</h1>
+      <div class='custom'>
+        <h1>we ae here to serve you</h1>
       </div>
     </body>
 </html>

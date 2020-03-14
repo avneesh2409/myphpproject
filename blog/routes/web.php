@@ -11,9 +11,25 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/test',function(){
+Route::get('/helloworld',function(){
     return view("helloworld");
 });
+Route::get('/register',function(){
+    return view("register");
+});
+Route::get('/home/getcookie',[
+   'middleware' => 'Home:editor',
+   'uses' => 'HomeController@getCookie',
+]);
+Route::get('/user/child',['as'=>'child',function(){
+    return view("layouts.child");
+}]);
+Route::post('/login',[
+    //'middlerware'=>'Login:editor',
+    'uses'=>'LoginController@index',
+]);
+
+Route::resource('home','HomeController');
