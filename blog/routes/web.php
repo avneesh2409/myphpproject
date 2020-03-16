@@ -36,3 +36,4 @@ Route::get('sendhtmlemail','MailController@html_email');
 Route::get('sendattachmentemail','MailController@attachment_email');
 
 Route::resource('home','HomeController');
+Route::resource('student','StudentController');
